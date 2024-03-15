@@ -1,7 +1,8 @@
 function Home() {
     return (
         <div>
-            <h1 className="text-center text-xl font-semibold text-stone-700">
+            {/* use text-['value in px or rem'] if you want to personalize the result more*/}
+            <h1 className="text-center text-xl font-semibold ">
                 The best pizza.
                 <br />
                 <span className="text-yellow-500">
