@@ -1,18 +1,18 @@
 //React Router imports
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 //Components imports
-import Home from './ui/Home'
-import Menu, { loader as menuLoader } from './features/menu/Menu'
-import Cart from './features/cart/Cart'
-import Order, { loader as orderLoader } from './features/order/Order'
+import Home from './ui/Home';
+import Menu, { loader as menuLoader } from './features/menu/Menu';
+import Cart from './features/cart/Cart';
+import Order, { loader as orderLoader } from './features/order/Order';
 import CreateOrder, {
     action as createOrderAction,
-} from './features/order/CreateOrder'
-import AppLayout from './ui/AppLayout'
-import Error from './ui/Error'
+} from './features/order/CreateOrder';
+import AppLayout from './ui/AppLayout';
+import Error from './ui/Error';
 
-//I'll define myroutes inisde this creteBrowserRouter function
+//I'm defining my routes inisde this creteBrowserRouter function
 const router = createBrowserRouter([
     {
         element: <AppLayout />,
@@ -39,10 +39,10 @@ const router = createBrowserRouter([
             },
         ],
     },
-])
+]);
 
 function App() {
-    return <RouterProvider router={router}></RouterProvider>
+    return <RouterProvider router={router}></RouterProvider>;
 }
 
-export default App
+export default App;
